@@ -24,6 +24,12 @@ fn main() {
 
     // Using if in a let Statement
     if_in_let_statement();
+
+    // Repetition with Loops
+    // repetition_with_loops(); // Uncomment for infinite loop demo
+
+    // Returning Values from Loops
+    returning_values_from_loops();
 }
 
 // Example of multiple if .. else if .. else conditions
@@ -41,6 +47,14 @@ fn multiple_conditions() {
     }
 }
 
+// Example of Repetition with Loops
+fn repetition_with_loops() {
+    // infinite loop
+    loop {
+        println!("again!");
+    }
+}
+
 // Example of Using if in a let Statement
 fn if_in_let_statement() {
     let condition = true;
@@ -50,4 +64,19 @@ fn if_in_let_statement() {
     // let number = if condition { 5 } else { "six" };
 
     println!("The value of number is: {number}");
+}
+
+// Example of Returning Values from Loops
+fn returning_values_from_loops() {
+    let mut counter = 0;
+
+    let result = loop {
+        counter += 1;
+
+        if counter == 10 {
+            break counter * 2;
+        }
+    };
+
+    println!("The result is {result}"); // The result is 20
 }
