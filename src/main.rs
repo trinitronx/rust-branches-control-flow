@@ -36,6 +36,9 @@ fn main() {
 
     // Conditional Loops with while
     while_loop();
+
+    // Looping Through a Collection with for
+    looping_through_collections();
 }
 
 // Example of multiple if .. else if .. else conditions
@@ -121,4 +124,17 @@ fn while_loop() {
     }
 
     println!("LIFTOFF!!!");
+}
+
+// Example of Looping Through a Collection with for
+fn looping_through_collections() {
+    let a = [10, 20, 30, 40, 50];
+    let mut index = 0;
+
+    // Could also use: while index < a.len()
+    while index < 5 {
+        println!("the value is: {}", a[index]);
+
+        index += 1;
+    }
 }
