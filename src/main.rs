@@ -40,6 +40,7 @@ fn main() {
     // Looping Through a Collection with for
     looping_through_collections();
     looping_through_collections_for_in_loop();
+    for_number_in_range_loop();
 }
 
 // Example of multiple if .. else if .. else conditions
@@ -149,4 +150,13 @@ fn looping_through_collections_for_in_loop() {
     for element in a {
         println!("the value is: {element}");
     }
+}
+
+// Example of Looping Through a Collection with for number in range
+// for .. in (N..M)
+fn for_number_in_range_loop() {
+    for number in (1..4).rev() {
+        println!("{number}!");
+    }
+    println!("LIFTOFF!!!");
 }
