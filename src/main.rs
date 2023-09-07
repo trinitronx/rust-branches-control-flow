@@ -33,6 +33,9 @@ fn main() {
 
     // Loop Labels to Disambiguate Between Multiple Loops
     break_outer_from_nested_loop();
+
+    // Conditional Loops with while
+    while_loop();
 }
 
 // Example of multiple if .. else if .. else conditions
@@ -105,4 +108,17 @@ fn break_outer_from_nested_loop() {
         count += 1;
     }
     println!("End count = {count}");
+}
+
+// While loop example
+fn while_loop() {
+    let mut number = 3;
+
+    while number != 0 {
+        println!("{number}!");
+
+        number -= 1;
+    }
+
+    println!("LIFTOFF!!!");
 }
