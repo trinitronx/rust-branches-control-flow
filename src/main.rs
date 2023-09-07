@@ -39,6 +39,7 @@ fn main() {
 
     // Looping Through a Collection with for
     looping_through_collections();
+    looping_through_collections_for_in_loop();
 }
 
 // Example of multiple if .. else if .. else conditions
@@ -127,6 +128,7 @@ fn while_loop() {
 }
 
 // Example of Looping Through a Collection with for
+// static condition check
 fn looping_through_collections() {
     let a = [10, 20, 30, 40, 50];
     let mut index = 0;
@@ -136,5 +138,15 @@ fn looping_through_collections() {
         println!("the value is: {}", a[index]);
 
         index += 1;
+    }
+}
+
+// Example of Looping Through a Collection with for
+// for .. in ..
+fn looping_through_collections_for_in_loop() {
+    let a = [10, 20, 30, 40, 50];
+
+    for element in a {
+        println!("the value is: {element}");
     }
 }
