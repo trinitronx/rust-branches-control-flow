@@ -21,6 +21,9 @@ fn main() {
 
     // Handling Multiple Conditions with else if
     multiple_conditions();
+
+    // Using if in a let Statement
+    if_in_let_statement();
 }
 
 // Example of multiple if .. else if .. else conditions
@@ -36,4 +39,15 @@ fn multiple_conditions() {
     } else {
         println!("number is not divisible by 4, 3, or 2");
     }
+}
+
+// Example of Using if in a let Statement
+fn if_in_let_statement() {
+    let condition = true;
+    let number = if condition { 5 } else { 6 };
+
+    // Does not compile - `if` and `else` have incompatible types
+    // let number = if condition { 5 } else { "six" };
+
+    println!("The value of number is: {number}");
 }
